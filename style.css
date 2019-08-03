@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    font-weight: 200;
+}
+
+html, body {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1467&q=80") center center / cover;
+}
+
+#box {
+    color: #eee;
+    width: 60%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 530px 0 0 0;
+}
+
+.type:after {
+    content: "";
+    border-right: 1px solid #eee;
+    animation: 0.5s infinite shine;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
